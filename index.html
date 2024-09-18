@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Wash</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--font awesome CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+      <!--Navigation link to script-->
+      <div id="nav-placeholder"></div>
+      <div class="container-max-width-centered">
+      <div class="hero">
+        <div class="car-wash-image">
+          <img src="/assets/images/car-wash-1.jpg" alt="A man washing a car" />
+        </div>
+        <h1 class="heading-1">
+          Toowoomba's <span class="red-span">top-rated </span>Car Wash and
+          Detailing.
+        </h1>
+        <p class="heading-1-desc">
+          Welcome to our family owned car wash plus professional detailing
+          service. Book now online or call us for more infor. We also offer door
+          to door services for similar price. We have been here for 20+ years
+          and are trusted by the locals for our quality and reasonably
+          affordable services.
+        </p>
+
+        <div class="browse-services-button">
+          <a href="/" class="book-now-btn">Book Now</a>
+          <a href="/" class="directions-btn">Get directions</a>
+        </div>
+        <p class="call-us">
+          Call us today on <a href="tel:1800 003 004">1800 003 004</a>
+        </p>
+      </div>
+
+      <div class="image-gallery">
+        <h1 class="section-heading">
+          Our Recent Works<span class="dot">.</span>
+        </h1>
+        <div class="image-container">
+          <img src="/assets/images/1.jpg" alt="" class="slide" />
+          <img src="/assets/images/2.jpg" alt="" class="slide" />
+          <img src="/assets/images/3.jpg" alt="" class="slide" />
+          <img src="/assets/images/4.jpg" alt="" class="slide" />
+
+          <!-- Navigation Buttons -->
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+      </div>
+      <!--Services section-->
+      <section id="services">
+        <h1 class="section-heading">Our Services<span class="dot">.</span></h1>
+        <div class="pricing-table">
+          <div class="pricing-card">
+            <div class="card-header professional">
+              <!-- <img src="path-to-icon1.png" alt="Professional Icon" /> -->
+              <h2>EXPRESS CAR WASH</h2>
+            </div>
+            <div class="card-body">
+              <p>
+                Get your car looking sharp and ready for a new drive with our
+                express package.
+              </p>
+              <p>
+                <strong
+                  >Extra surcharge of $10 will apply to large vehiches.
+                </strong>
+              </p>
+
+              <h3>$35<span>/wash</span></h3>
+            </div>
+            <div class="card-footer">
+              <button>Book Now</button>
+            </div>
+          </div>
+
+          <div class="pricing-card">
+            <div class="card-header advanced">
+              <!-- <img src="path-to-icon2.png" alt="Advanced Icon" /> -->
+              <h2>INTERIOR DETAILING</h2>
+            </div>
+            <div class="card-body">
+              <p>
+                Get your car looking sharp and ready for a new drive with our
+                express package.
+              </p>
+              <p>
+                <strong
+                  >Extra surcharge of $20 will apply to large vehiches.
+                </strong>
+              </p>
+
+              <h3>$80<span>/vehicle</span></h3>
+            </div>
+            <div class="card-footer">
+              <button>Book Now</button>
+            </div>
+          </div>
+
+          <div class="pricing-card">
+            <div class="card-header premium">
+              <!-- <img src="path-to-icon3.png" alt="Premium Icon" /> -->
+              <h2>EXTERIOR DETAILING</h2>
+            </div>
+            <div class="card-body">
+              <p>
+                Get your car looking sharp and ready for a new drive with our
+                express package.
+              </p>
+              <p>
+                <strong
+                  >Extra surcharge of $20 will apply to large vehiches.
+                </strong>
+              </p>
+
+              <h3>$120<span>/vehicle</span></h3>
+            </div>
+            <div class="card-footer">
+              <button>Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location">
+        <h1 class="section-heading">Location<span class="dot">.</span></h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113172.7558148109!2d151.84431002537173!3d-27.573413666199645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9644ba48e3658f%3A0x400eef17f20bf50!2sToowoomba%20QLD!5e0!3m2!1sen!2sau!4v1723796646361!5m2!1sen!2sau"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p class="location-desc">
+          <strong>Location: </strong>Toowoomba City, Queensland, 4350
+          <br />
+          <strong>Phone: </strong>07 4631 1111
+          <br />
+          <strong> E-mail: </strong>
+
+          <a href="mailto:example@gmail.com">carwash@gmail.com</a>
+          <br />
+          <strong>Opening Hours:</strong>
+          Mon-Fri 8am to 5pm.
+        </p>
+      </section>
+
+      <section id="about">
+        <h1 class="section-heading">About Us<span class="dot">.</span></h1>
+        <figure>
+          <img
+            src="/assets/images/car-wash-1.jpg"
+            alt="Owners picture"
+            class="about-image"
+          />
+        </figure>
+
+        <p class="about-desc">
+          We are a team of passionate individuals who are dedicated to providing
+          the best car wash experience in Toowoomba. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Soluta dolorem deserunt eos dolore nobis
+          nisi quo assumenda eaque fugit voluptatibus rerum consequuntur quam
+          placeat, quaerat a dicta quia laboriosam perferendis! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Quos ut ullam tenetur
+          quo, nisi corrupti aut alias voluptatum adipisci quia, quis dolor,
+          quas distinctio eveniet quaerat molestiae. Rerum, minima fugit. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Nobis iure
+          dignissimos vero ab sunt consequuntur dicta modi fugit. Fugiat fuga
+          optio debitis! Asperiores et eos unde deserunt fuga obcaecati a.
+        </p>
+      </section>
+
+      <!--testimonial card html-->
+      <div class="testimonial">
+        <h1 class="section-heading">
+          Client's feedback<span class="dot">.</span>
+        </h1>
+
+        <div class="testimonial-card-1">
+          <div class="testimonial-body">
+            <h5>
+              "Sometimes I think the surest sign that intelligent life exists
+              elsewhere in the universe is that none of it has tried to contact
+              us."
+            </h5>
+          </div>
+          <div class="testimonial-footer">
+            <div class="user-details">
+              <p class="primary-text">Big Bob</p>
+              <p class="secondary-text">Regular Customer</p>
+            </div>
+            <div class="user-avatar">
+              <img
+                src="https://source.unsplash.com/xyauiSBWRFs"
+                alt="card image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+        <div class="footer-logo">
+          <h2 class="logo">Car <span class="red-span">Wash</span></h2>
+        </div>
+        <div class="social-media-links">
+          <p>Follow us:</p>
+          <div class="social-media-icons">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-square-x-twitter"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </div>
+        </div>
+        <div class="email-us">
+          <p>Email us at: 
+            <br>
+            <a href="mailto:info@carwash.com">info@carwash.com </a>
+        </div>
+        <p class="footer-text">Copyright 2023. All rights reserved.</p>
+
+      </div>
+    </div>
+    </footer>
+
+    <script src="/nav.html"></script>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
