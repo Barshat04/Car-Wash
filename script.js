@@ -1,9 +1,10 @@
 //navigation bar jquery start
+/*
 $(function(){
     $("#nav-placeholder").load("nav.html");
   });
 //navbar function end
-
+*/
 
 //image slider 
 
@@ -35,3 +36,14 @@ setInterval(function() {
   changeSlide(1);
 }, 10000); // Change image every 5 seconds
 */
+
+
+
+const mobileNav = document.querySelector(".hamburger");
+const navbar = document.querySelector(".menubar");
+
+const toggleNav = () => {
+  navbar.classList.toggle("active");
+  mobileNav.classList.toggle("hamburger-active");
+};
+mobileNav.addEventListener("click", () => toggleNav());
